@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="icon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&display=swap"  rel="stylesheet"> 
+    <link rel="stylesheet" href="style.css">
+    <title>Convert the Weather</title>
+</head>
+<body>
+
+    <div class="convert-weather-box">
+
+        <div class="box-title">
+            <div class="box-side-line"></div>
+            <span class="title">Convert the Weather</span>
+        </div>
+    
+        <div class="list-box-temperature">
+            <div class="box-temperature">
+                <div class="box-temperature-input-celsius">
+                    <input type="number" id="celsius" class="temperature-number" placeholder="Insert" oninput="celsiusTemperatureConvert ()">
+                </div>
+                <div class="box-temperature-name">
+                    <span class="temperature-name">Celsius</span>
+                </div>
+            </div>
+        
+            <div class="box-temperature">
+                <div class="box-temperature-input-fahrenheit">
+                    <input type="number" id="fahrenheit" class="temperature-number" placeholder="Insert"  oninput="fahrenheitTemperatureConvert ()">
+                </div>
+                <div class="box-temperature-name">
+                    <span class="temperature-name">Fahrenreit</span>
+                </div>
+            </div>
+        
+            <div class="box-temperature">
+                <div class="box-temperature-input-kelvin">
+                    <input type="number" class="temperature-number" id="kelvin" placeholder="Insert" oninput="kelvinTemperatureConvert()">
+                </div>
+                <div class="box-temperature-name">
+                    <span class="temperature-name">Kelvin</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-box">
+            <button id="reset">Reset Values</button>
+        </div>
+    </div>
+
+    <script src="script-convert.js"></script>
+
+</body>
+</html>

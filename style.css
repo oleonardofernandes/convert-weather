@@ -1,0 +1,185 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+} 
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+body {
+    background-image: url(Fondo4.png);
+    background-size: cover ;
+    /*background-color: rgb(240, 240, 240);*/
+}
+
+.convert-weather-box {
+    width: 60rem;
+    display: flex;
+    flex-direction: column;
+    outline: 0.125rem solid #1004ac;
+    border-radius: 1rem;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: rgba(39, 39, 39, 0.342);
+    /*background-color: #0f059a31;*/
+    backdrop-filter: blur(0.625rem);
+    box-shadow: 0.125rem 0.125rem 0.625rem rgba(0, 0, 0, 0.219);
+}
+
+.box-title {
+    width: 60rem;
+    display: flex;
+    border-top-left-radius:10rem;
+    border-top-right-radius: 10rem;
+}
+
+.title {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 700;
+    color: #307DF0;
+    /*color: #2D76E3;*/
+    font-size: 4.5rem;
+    width: 50%;
+    margin-left: 2rem;
+    flex-direction: row;
+}
+
+/*.box-side-line {
+    width: 0.625rem;
+    background-color: #0F059A;
+    border-radius: 0.5rem;
+}*/
+
+.list-box-temperature {
+    display: flex;
+    flex-direction: row;
+    width: 60rem;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.box-temperature {
+    display: flex;
+    flex-direction: column;
+    width: 19.5rem;
+    height: 10rem;
+    border-right: 0.5rem solid #E8C174;
+}
+
+.box-temperature-input-celsius, 
+.box-temperature-input-fahrenheit, 
+.box-temperature-input-kelvin {
+    width: 19.5rem;
+    height: 7rem;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding-right: 2rem;
+}
+
+.temperature-number {
+    height: 4rem;
+    font-size: 4rem;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 600;
+    text-align: end;
+    border: none;
+    color: #6D9ADD;
+    width: 14rem;
+    outline: none;
+    background:none;
+}
+
+.temperature-number::placeholder {
+    color: rgb(156, 156, 156);
+}
+
+.box-temperature-name {
+    width: 19.5rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 2rem;
+}
+
+.temperature-name {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: #79AAF2;
+}
+
+#reset {
+    border: none;
+    border-radius: 2rem;
+    padding: 0.5rem 1rem;
+    font-size: 1.125rem;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 500;
+    color: white;
+    background-color: #6189c5;
+    box-shadow: 0.125rem 0.125rem 0.625rem rgba(0, 0, 0, 0.219);
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#reset:hover {
+    background-color: #96befa;
+    box-shadow: 0.125rem 0.125rem 0.625rem rgba(0, 0, 0, 0.404);
+}
+
+.footer-box {
+    width: 60rem;
+    display: flex;
+    outline: 0.125rem solid #1004ac;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+@media screen and (max-width: 650px) {
+
+    .convert-weather-box {
+        flex-direction: column;
+        width: 80%;
+        top: 80%;
+        display: flex;
+    }
+
+    .box-title{
+        margin-left: 0;
+        margin-bottom: 2rem;
+        flex-direction: column;
+        width: auto;
+        flex-wrap: wrap;
+    }
+
+    .title {
+        width: auto;
+        display: flex;
+        margin-left: 1rem;
+    }
+
+    .list-box-temperature{
+        flex-direction: column;
+        margin-left: 0;
+        margin-bottom: 2rem;
+        width: auto;
+        flex-wrap: wrap-reverse;
+    }
+
+    .footer-box {
+        width: 100%;
+    }
+
+}
